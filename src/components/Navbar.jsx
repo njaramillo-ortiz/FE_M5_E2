@@ -54,7 +54,7 @@ export function Navbar(props)
                     }
                     
                     {
-                        (auth.isAdmin || !auth.isDoctor) && 
+                        (auth.isLogged && !auth.isDoctor) && 
                         <MenuItem>
                             <NavLink
                                 to='/reserve'
